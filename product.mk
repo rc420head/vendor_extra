@@ -1,16 +1,14 @@
-ifeq ($(filter h870 h872 us997,$(TARGET_DEVICE)),)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-endif
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 PRODUCT_PACKAGES += \
-    RemoveStdPackages \
-    Nova
-
-ifneq ($(filter guacamole, $(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
-    OP7Gcam
-endif
+    RemoveStdPackages
 
 # log privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    ro.build.selinux=1
