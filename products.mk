@@ -1,5 +1,5 @@
 PRODUCT_PACKAGES += \
     RemoveStdPackages \
-    OmniStyle
+    MusicFX
 
 
