@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemoveStdPackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := DeskClock Etar Jelly Eleven Contacts messaging Dialer Email
+LOCAL_OVERRIDES_PACKAGES :=  Etar Jelly Eleven messaging Dialer Email AudioFX
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null

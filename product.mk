@@ -1,7 +1,7 @@
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)
 
-#PRODUCT_PACKAGES += \
-#    RemoveStdPackages
+PRODUCT_PACKAGES += \
+    RemoveStdPackages
 
 # log privapp-permissions whitelist
 #PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
